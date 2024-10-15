@@ -8,12 +8,12 @@ interface Todo {
 
 interface TodoState {
   todos: Todo[];
-  currentTodo: Todo | null; // New field for holding the current todo to be edited
+  currentTodo: Todo | null;
 }
 
 const initialState: TodoState = {
   todos: [],
-  currentTodo: null, // Initially, no todo is being edited
+  currentTodo: null,
 };
 
 const todoSlice = createSlice({
@@ -40,7 +40,7 @@ const todoSlice = createSlice({
       const todo = state.todos.find((todo) => todo.id === action.payload.id);
       if (todo) {
         todo.text = action.payload.text;
-        state.currentTodo = null; // Clear currentTodo after update
+        state.currentTodo = null;
       }
     },
     deleteTodo: (state, action: PayloadAction<number>) => {
