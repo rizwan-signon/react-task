@@ -1,0 +1,24 @@
+.todo-page {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .todo-list {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .todo-item {
+      &:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .todo-page {
+    padding: 10px;
+  }
+}
