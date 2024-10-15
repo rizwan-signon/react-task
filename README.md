@@ -1,4 +1,5 @@
 # React + TypeScript + Vite
+I created a responsive Todo application using React with SCSS for styling, ensuring it works on mobile, tablet, and desktop. I implemented React Router for navigation and Redux Toolkit for state management. The app allows users to add, edit, delete, and toggle todos, with reusable components for better scalability.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
